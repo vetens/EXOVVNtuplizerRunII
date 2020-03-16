@@ -53,7 +53,7 @@ options.maxEvents = 1000
 #options.inputFiles = '/store/mc/RunIIAutumn18MiniAOD/BuToKJpsi_ToMuMu_probefilter_SoftQCDnonD_TuneCP5_13TeV-pythia8-evtgen/MINIAODSIM/PUPoissonAve20_BParking_102X_upgrade2018_realistic_v15-v2/120000/FDD42175-87DC-D648-860B-F240C5E2CB91.root'
 #options.inputFiles ='/store/data/Run2018B/Charmonium/MINIAOD/17Sep2018-v1/10000/02CFE87F-7C17-1340-8300-FDA86C16D58C.root'
 #options.inputFiles ='/store/user/cgalloni/BJpsiX_MuMu_270819/Autumn18_10_2_9_miniAOD/190827_143312/0005/miniAOD_5000.root'
-options.inputFiles = '/store/user/cgalloni/BcJpsiTauNu_020519/Fall18_10_2_9-MINIAODSIM_noDuplCheck_020519/190505_141436/0000/miniAOD_99.root'
+options.inputFiles = '/store/user/cgalloni/JpsiX_MuMu_J_211119/Autumn18_10_2_9_miniAOD/191122_093339/0010/miniAOD_10000.root'
 
 options.parseArguments()
 
@@ -274,7 +274,8 @@ if  config["RUNONMC"] :
     GT = '94X_mc2017_realistic_v17'
   elif (("Autumn18" in options.RunPeriod) or ("Fall18" in options.RunPeriod)):
     JECprefix = "Autumn18_V8"
-    GT = '102X_upgrade2018_realistic_v18'
+    #GT = '102X_upgrade2018_realistic_v18'
+    GT = '102X_upgrade2018_realistic_v20'
   #jecAK8chsUncFile = "JEC/%s_MC_Uncertainty_AK8PFchs.txt"%(JECprefix)
   jecAK4chsUncFile = "JEC/%s_MC_Uncertainty_AK4PFchs.txt"%(JECprefix)
  

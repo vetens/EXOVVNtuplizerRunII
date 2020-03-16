@@ -27,7 +27,7 @@ config["DOMISSINGET"] = True
 config["DOMVAMET"] = False
 config["DOJPSIMU"] = True
 config["DOJPSIELE"] = False
-config["DOJPSITAU"] = True
+config["DOJPSITAU"] = False
 config["DOGENHIST"] = (True and config["RUNONMC"]);
 config["DOCUTFLOW"] = True;
 

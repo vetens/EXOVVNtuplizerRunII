@@ -87,7 +87,7 @@ def main():
     config.section_("Data")
     config.Data.inputDataset = None
     config.Data.allowNonValidInputDataset = True if ( not options.isData) else False #To allow to run on non valid dataset
-    #config.Data.inputDBS = 'phys03' #to be commented in case of global#
+    config.Data.inputDBS = 'phys03' #to be commented in case of global#
 
     print "1)options.luminosity ", options.luminosity
 
@@ -101,7 +101,8 @@ def main():
 
     config.Data.publication = False
     #config.Data.outLFNDirBase = '/store/user/cgalloni/Ntuple_2017_94v2_preliminary'
-    config.Data.outLFNDirBase = '/store/user/cgalloni/Ntuple_BPH_v0'
+    #config.Data.outLFNDirBase = '/store/user/cgalloni/Ntuple_BPH_v0'
+    config.Data.outLFNDirBase = '/store/user/wvetens/Ntuple_BPH_gen_v0'
     #config.Data.outLFNDirBase = '/pnfs/psi.ch/cms/trivcat/store/t3groups/uniz-higgs/Fall17'
 
     config.section_("Site")
