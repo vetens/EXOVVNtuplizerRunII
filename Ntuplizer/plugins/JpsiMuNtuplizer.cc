@@ -827,6 +827,7 @@ void JpsiMuNtuplizer::fillBranches( edm::Event const & event, const edm::EventSe
                                        bc_part->currentState().globalMomentum().eta(), bc_part->currentState().globalMomentum().phi());
 
             if(_dR < 0.7) iso += mypfcollection[itrk].pt();
+            std::cout << mypfcollection[itrk].pt() << std::endl;
 
             Float_t _dR1 = reco::deltaR(mypfcollection[itrk].eta(), mypfcollection[itrk].phi(),
                                         mu1_fit.eta(), mu1_fit.phi());
